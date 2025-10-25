@@ -46,6 +46,6 @@ Gratitude to the SKY130 PDK community, Contributors of VSDBabySoC repository and
 
 ---
 
-Previous week, Week 4 (NgSpice Analysis) : [Week 3 Repository](https://github.com/navneetprasad1311/vsd-soc-pgrm-w3)
+Previous week, Week 4 (NgSpice Analysis) : [Week 4 Repository](https://github.com/navneetprasad1311/vsd-soc-pgrm-w4)
 
 ---
