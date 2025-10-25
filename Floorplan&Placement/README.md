@@ -7,13 +7,12 @@ This lab focuses on using **OpenROAD Flow Scripts** to carry out the **Floorplan
 ## Table of Contents
 
 1. [Importance of Floorplanning and Placement](#importance-of-floorplanning-and-placement)
-2. [Floorplan and Placement of GCD](#floorplan-and-placement-of-gcd)
-3. [Installation of OpenROAD Flow](#installation-of-openroad-flow)
+2. [Installation of OpenROAD Flow](#installation-of-openroad-flow)
    - [Installation of OpenROAD](#installation-of-openroad)
    - [Installation of Flow Scripts](#installation-of-flow-scripts)
-4. [Floorplan of `gcd`](#floorplan-of-gcd)
-5. [Placement of `gcd`](#placement-of-gcd)
-6. [Summary](#summary-floorplan-and-placement-of-gcd-using-openroad-flow-scripts)
+3. [Floorplan of `gcd`](#floorplan-of-gcd)
+4. [Placement of `gcd`](#placement-of-gcd)
+5. [Summary](#summary-floorplan-and-placement-of-gcd-using-openroad-flow-scripts)
 
 ---
 
