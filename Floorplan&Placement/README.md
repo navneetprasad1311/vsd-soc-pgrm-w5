@@ -7,12 +7,32 @@ This lab focuses on using **OpenROAD Flow Scripts** to carry out the **Floorplan
 ## Table of Contents
 
 1. [Floorplan and Placement of GCD](#floorplan-and-placement-of-gcd)
-2. [Installation of OpenROAD Flow](#installation-of-openroad-flow)
+2. [Importance of Floorplanning and Placement](#importance-of-floorplanning-and-placement)
+3. [Installation of OpenROAD Flow](#installation-of-openroad-flow)
    - [Installation of OpenROAD](#installation-of-openroad)
    - [Installation of Flow Scripts](#installation-of-flow-scripts)
-3. [Floorplan of `gcd`](#floorplan-of-gcd)
-4. [Placement of `gcd`](#placement-of-gcd)
-5. [Summary](#summary-floorplan-and-placement-of-gcd-using-openroad-flow-scripts)
+4. [Floorplan of `gcd`](#floorplan-of-gcd)
+5. [Placement of `gcd`](#placement-of-gcd)
+6. [Summary](#summary-floorplan-and-placement-of-gcd-using-openroad-flow-scripts)
+
+---
+
+## Importance of Floorplanning and Placement
+
+**Floorplanning** is the process of defining the **physical layout of a chip** before placing standard cells. It involves:  
+
+- Allocating **die and core area**.  
+- Placing **I/O pads** around the die periphery.  
+- Arranging **macros** (like SRAM, PLLs) strategically.  
+- Dividing the core into **standard cell rows**.  
+- Designing a robust **power delivery network (PDN)**.  
+- Reserving areas for **physical-only cells** (tap cells, endcaps, blockages).  
+
+**Placement** is the step where **standard cells and small blocks** are arranged within the core area defined by floorplanning. The goals are:  
+
+- **Minimize wire length** between connected cells.  
+- **Reduce congestion** for easier routing.  
+- **Meet timing constraints** to ensure proper circuit operation.  
 
 ---
 
@@ -127,7 +147,9 @@ make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk floorplan
 
 ![floorplan](Images/floorplan.png)
 
-then, to view the gui,
+The die size and core utilization percentage are observed in the OpenROAD flow scripts, ensuring that the floorplan and placement adhere to the specified physical constraints.
+
+And then, to view the gui,
 
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk gui_floorplan
