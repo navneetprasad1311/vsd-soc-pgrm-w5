@@ -12,6 +12,7 @@ This lab focuses on using **OpenROAD Flow Scripts** to carry out the **Floorplan
    - [Installation of Flow Scripts](#installation-of-flow-scripts)
 3. [Floorplan of `gcd`](#floorplan-of-gcd)
 4. [Placement of `gcd`](#placement-of-gcd)
+5. [Summary](#summary-floorplan-and-placement-of-gcd-using-openroad-flow-scripts)
 
 ---
 
@@ -108,7 +109,7 @@ export OPENSTA_EXE=/usr/local/bin/sta
 > Use `whereis` command to locate the binaries of OpenROAD, Yosys and OpenSTA
 
 
-With this OpenROAD and its script flow is complete.
+With this OpenROAD and its script flow installation is complete.
 
 ---
 
@@ -160,7 +161,7 @@ make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk gui_place
 
 ---
 
-## Summary: Floorplan and Placement of GCD using OpenROAD Flow Scripts
+## Summary
 
 This lab demonstrates the **physical design stages**—**Floorplan** and **Placement**—for the **GCD** module using **OpenROAD Flow Scripts**, transitioning from logic-level design to physical layout in the VLSI backend flow.
 
