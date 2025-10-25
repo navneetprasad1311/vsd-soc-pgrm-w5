@@ -174,12 +174,12 @@ This lab demonstrates the **physical design stages**—**Floorplan** and **Place
 
 2. **Floorplanning**
    - Navigated to the `flow` directory inside `OpenROAD-flow-scripts`.
-   - Generated floorplan using `make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk floorplan`.
-   - Visualized the floorplan in GUI with `make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk gui_floorplan`.
+   - Generated floorplan 
+   - Visualized the floorplan in GUI 
 
 3. **Placement**
-   - Ran placement using `make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk place`.
-   - Viewed placement in GUI with `make DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk gui_place`.
+   - Ran placement 
+   - Viewed placement in GUI 
    - Verified cell placement in the design (e.g., Sky130 standard cells).
 
 ### Outcome
